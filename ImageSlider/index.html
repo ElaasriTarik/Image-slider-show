@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Iamge slider</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section class="container">
+		<div class="img1 img">
+			<img src="images/vlcsnap-2022-05-06-22h28m17s688.png" alt="">
+		</div>
+		<div class="img2 img">
+			<img src="images/vlcsnap-2022-05-05-01h10m21s115.png" alt="">
+		</div>
+		<div class="img3 img">
+			<img src="images/vlcsnap-2022-04-18-03h44m14s298.png" alt="">
+		</div>
+	</section>
+
+	<script type="text/javascript">
+	   const box = document.querySelectorAll('.img');
+	   const image = document.querySelector('img');
+   box.forEach(boxes => {
+   	    boxes.addEventListener('click', () => {
+	   	boxes.classList.toggle('boxHovered');
+	   	image.classList.toggle('imageHovered');
+	   	boxes.addEventListener('ondbclick', () => {
+	   		boxes.classList.toggle('boxHovered');
+	   	})
+	   })
+	   
+   })
+
+    	
+	</script>
+</body>
+</html>
